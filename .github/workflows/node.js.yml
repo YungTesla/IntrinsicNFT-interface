@@ -42,7 +42,7 @@ jobs:
         RECORD_NAME: '_dnslink'
         CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
       id: cloudflare-dnslink
-      uses: resource-network/cloudlfare-dnslink-update
+      uses: ReSource-Network/cloudlfare-dnslink-update@v1.2
       with:
         cid: ${{ steps.push.outputs.cid }}
 
