@@ -44,5 +44,5 @@ jobs:
       id: cloudflare-dnslink
       uses: ReSource-Network/cloudlfare-dnslink-update@v1.2
       with:
-        cid: ${{ steps.push.outputs.cid }}
+        cid: 'QmSVQ5p1i5N8GXbquijYbiFAQw8N33nG39fmfi1bha8EWw'
 
