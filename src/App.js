@@ -7,9 +7,7 @@ function App() {
       <header className="App-header">
         <p>Yung Tesla on IPFS!!</p>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <p>Intrinsic NFT's under construction..</p>
         <a
           className="App-link"
           href="https://reactjs.org"
