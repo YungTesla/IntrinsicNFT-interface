@@ -34,4 +34,15 @@ jobs:
       id: upload
       with:
         path: ./build
+    
+    - name: Update DNS Link via Cloudflare
+      env:
+        CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
+        RECORD_DOMAIN: 'yungtesla.nl'
+        RECORD_NAME: '_dnslink'
+        CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+      id: cloudflare-dnslink
+      uses: resource-network/cloudflare-update-dnslink@v2
+      with:
+        cid: ${{ steps.push.outputs.cid }}
 
