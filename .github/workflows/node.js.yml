@@ -34,16 +34,10 @@ jobs:
       id: upload
       with:
         path: ./build
-    
-    - name: Update DNS Link via Cloudflare
-      env:
-        CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
-        RECORD_DOMAIN: 'yungtesla.nl'
-        RECORD_NAME: '_dnslink'
-        CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
-        CID: 'QmSVQ5p1i5N8GXbquijYbiFAQw8N33nG39fmfi1bha8EWw'
-      id: cloudflare-dnslink
-      uses: ReSource-Network/cloudlfare-dnslink-update@v1.2
+  
+    - uses: XueMoMo/actions-coudflare-dns@v1.0.1
       with:
-        cid: 'QmSVQ5p1i5N8GXbquijYbiFAQw8N33nG39fmfi1bha8EWw'
-
+        name: "yungtesla.nl"
+        cid: "Qmaosiodjjkfjaklsjdkjklfjklajskjdklf"
+        token: ${{ secrets.CLOUDFLARE_TOKEN }}
+        zone: ${{ secrets.CLOUDFLARE_ZONE }}
