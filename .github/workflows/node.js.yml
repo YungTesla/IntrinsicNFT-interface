@@ -41,6 +41,7 @@ jobs:
         RECORD_DOMAIN: 'yungtesla.nl'
         RECORD_NAME: '_dnslink'
         CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+        CID: 'QmSVQ5p1i5N8GXbquijYbiFAQw8N33nG39fmfi1bha8EWw'
       id: cloudflare-dnslink
       uses: ReSource-Network/cloudlfare-dnslink-update@v1.2
       with:
