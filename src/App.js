@@ -8,7 +8,7 @@ function App() {
         <p>Yung Tesla on IPFS!!</p>
         <img src={logo} className="App-logo" alt="logo" />
         <p>Intrinsic NFT's under construction..</p>
-        <h1>Sjonkoooobonko</h1>
+        <h1>Yunggggg Tesla... What up</h1>
         <a
           className="App-link"
           href="https://reactjs.org"
