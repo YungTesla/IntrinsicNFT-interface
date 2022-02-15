@@ -22,7 +22,7 @@ function Calculator() {
   const handleChange = useCallback(() => {
     const data = [];
     const price = 1;
-    for (let i = 0; i < total; i++) {
+    for (let i = 1; i <= total; i++) {
       let d = {
         number: i,
         value: ((i * intrest) / 100) * price,

@@ -8,9 +8,21 @@
 .calculator .card {
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
   height: 50vh;
   justify-content: space-around;
   align-items: center;
   border-radius: 40px;
+  box-shadow: 0 4px 8px 0 #f6f7eb;
+  width: 65%;
+  text-align: center;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.calculator {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

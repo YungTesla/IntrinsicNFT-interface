@@ -1,0 +1,31 @@
+.rarities {
+  padding: 50px 50%;
+  background-color: var(--c-mainbrandcolor);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: first baseline;
+  align-items: center;
+  overflow: scroll;
+}
+
+.rarities .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 40px;
+  box-shadow: 0 4px 8px 0 #f6f7eb;
+  width: 250px;
+  text-align: center;
+  padding: 30px;
+  margin-right: 150px;
+
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+.rarities .image {
+  width: 150px;
+}

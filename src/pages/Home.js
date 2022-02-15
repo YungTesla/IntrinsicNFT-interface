@@ -4,6 +4,7 @@ import Rewards from "./Home/Rewards";
 import Royalties from "./Home/Royalties";
 import Calculator from "./Home/Calculator";
 import Voting from "./Home/Voting";
+import Rarities from "./Home/Rarities";
 
 function Home() {
   const mystyle = {};
@@ -16,6 +17,7 @@ function Home() {
       <Royalties />
       <Voting />
       <Calculator />
+      <Rarities />
     </div>
   );
 }

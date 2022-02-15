@@ -1,10 +1,8 @@
 import "../../assets/Hero.css";
-import HeaderLow from "../../components/HeaderLow";
 
 function Hero() {
   return (
     <div class="hero-image">
-      <HeaderLow />
       <div class="hero-text">
         <h2>Title</h2>
         <p>

@@ -7,16 +7,15 @@
   margin-bottom: 50px;
 }
 
-.card {
+.collection-container .card {
   box-shadow: 0 4px 8px 0 #f6f7eb;
-  max-width: 75%;
+  width: 65%;
   margin: auto;
   text-align: center;
   font-family: arial;
   border-radius: 5%;
   padding: 30px;
   background-color: rgba(0, 0, 0, 0.5);
-  /* height: 80vh; */
   display: flex;
   flex-direction: column;
 }
