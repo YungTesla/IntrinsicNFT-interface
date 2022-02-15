@@ -36,7 +36,7 @@ jobs:
   
     - uses: XueMoMo/actions-coudflare-dns@v1.0.1
       with:
-        name: "yungtesla.nl"
+        name: "intrinsic.work"
         cid: ${{ steps.upload.outputs.hash }} 
         token: ${{ secrets.CLOUDFLARE_TOKEN }}
         zone: ${{ secrets.CLOUDFLARE_ZONE }}
