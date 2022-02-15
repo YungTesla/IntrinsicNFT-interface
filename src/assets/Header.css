@@ -2,12 +2,15 @@ header {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  height: 80px;
+  height: 50px;
   align-items: center;
-  background-color: var(--c-mainbrandcolor);
   position: fixed;
   box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2);
   z-index: 100;
+  /* background-color: var(--c-mainbrandcolor); */
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
 .name-wrap {
@@ -28,7 +31,7 @@ header {
 }
 
 .logo {
-  width: 70px;
+  width: 50px;
   padding-left: 25px;
 }
 
@@ -50,8 +53,8 @@ header h1 {
   /* font-family: "Montserrat Subrayada", sans-serif; */
   /* font-family: "Cherry Cream Soda", cursive; */
   /* font-family: "Cabin Sketch", cursive; */
-  /* font-family: "Tenor Sans", sans-serif; */
-  font-family: "Rampart One", cursive;
+  font-family: "Tenor Sans", sans-serif;
+  /* font-family: "Rampart One", cursive; */
 
   background: -webkit-linear-gradient(
     var(--brandcolor-blue),
@@ -61,5 +64,7 @@ header h1 {
   -webkit-text-fill-color: transparent;
 
   /* color: var(--brandcolor-blue); */
-  font-size: 40px;
+  font-size: 30px;
+
+  letter-spacing: 10px;
 }

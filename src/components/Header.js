@@ -17,8 +17,8 @@ const Header = () => {
         <Link to="/">
           <Logo className="logo" />
         </Link>
-        <h1>INTRINSIC NFT</h1>
       </div>
+      <h1>INTRINSIC NFT</h1>
       <div class="menu">
         <Link to="/about">
           <Login />
