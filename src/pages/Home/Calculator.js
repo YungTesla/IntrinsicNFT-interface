@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { LineChart, Line, Tooltip, XAxis, YAxis } from "recharts";
 import "../../assets/Calculator.css";
 
@@ -9,15 +9,17 @@ function Calculator() {
 
   const changeTotal = (event) => {
     setTotal(event.target.value);
-    handleChange();
+    const newData = handleChange();
+    setData(newData);
   };
 
   const changeIntrest = (event) => {
     setIntrest(event.target.value);
-    handleChange();
+    const newData = handleChange();
+    setData(newData);
   };
 
-  const handleChange = () => {
+  const handleChange = useCallback(() => {
     const data = [];
     const price = 1;
     for (let i = 0; i < total; i++) {
@@ -27,14 +29,14 @@ function Calculator() {
       };
       data.push(d);
     }
-    setData(data);
     console.log(data);
-  };
+    return data;
+  }, [intrest, total]);
 
   useEffect(() => {
-    handleChange();
-    console.log(data);
-  }, []);
+    const newData = handleChange();
+    setData(newData);
+  }, [handleChange]);
 
   return (
     <div className="calculator">
