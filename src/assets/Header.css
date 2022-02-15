@@ -4,60 +4,62 @@ header {
   justify-content: space-between;
   height: 80px;
   align-items: center;
-}
-
-nav {
-  width: 25%;
+  background-color: var(--c-mainbrandcolor);
+  position: fixed;
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2);
+  z-index: 100;
 }
 
 .name-wrap {
+  display: flex;
   align-items: center;
 }
 
-.nav-options {
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-}
-
-li {
-  display: inline-block;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.name-wrap {
-  display: flex;
+.name-wrap h1 {
+  padding-left: 10px;
 }
 
 .menu {
-  display: none;
+  display: flex;
 }
 
-@media (max-width: 648px) {
-  .menu {
-    display: inline;
-  }
+.menu > * {
+  padding-right: 25px;
+}
 
-  .nav-options {
-    display: none;
-  }
+.logo {
+  width: 70px;
+  padding-left: 25px;
+}
 
-  .nav-options.active {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    height: 120px;
-    background: white;
-    align-items: center;
-  }
+header h1 {
+  /* font-family: "Bungee Shade", cursive; */
+  /* font-family: "Fascinate Inline", cursive; */
+  /* font-family: "Iceberg", cursive; */
+  /* font-family: "Libre Barcode 39 Text", cursive; */
+  /* font-family: "MuseoModerno", cursive; */
+  /* font-family: "Salsa", cursive; */
+  /* font-family: "Stalinist One", cursive; */
+  /* font-family: "Timmana", sans-serif; */
+  /* font-family: "Tourney", cursive; */
+  /* font-family: "Train One", cursive; */
+  /* font-family: "Wendy One", sans-serif; */
+
+  /* font-family: "Finger Paint", cursive; */
+  /* font-family: "Libre Barcode 39 Extended Text", cursive; */
+  /* font-family: "Montserrat Subrayada", sans-serif; */
+  /* font-family: "Cherry Cream Soda", cursive; */
+  /* font-family: "Cabin Sketch", cursive; */
+  /* font-family: "Tenor Sans", sans-serif; */
+  font-family: "Rampart One", cursive;
+
+  background: -webkit-linear-gradient(
+    var(--brandcolor-blue),
+    var(--brandcolor-green)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* color: var(--brandcolor-blue); */
+  font-size: 40px;
 }

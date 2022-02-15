@@ -1,23 +1,21 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import "../assets/Header.css";
-import "../assets/index.css";
-import { ReactComponent as Logo } from "../assets/brandlogocolor.svg";
+import "../assets/HeaderLow.css";
+import { ReactComponent as Logo2 } from "../assets/brandlogo.svg";
 import { ReactComponent as MenuOpen } from "../assets/menu.svg";
 import { ReactComponent as MenuClose } from "../assets/close.svg";
 import { ReactComponent as Login } from "../assets/login.svg";
+import { useState } from "react";
 
-const Header = () => {
+function HeaderLow() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
   return (
-    <header>
-      <div class="name-wrap">
+    <header className="header-low">
+      <div>
         <Link to="/">
-          <Logo className="logo" />
+          <Logo2 className="logo" />
         </Link>
-        <h1>INTRINSIC NFT</h1>
       </div>
       <div class="menu">
         <Link to="/about">
@@ -27,6 +25,6 @@ const Header = () => {
       </div>
     </header>
   );
-};
+}
 
-export default Header;
+export default HeaderLow;

@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.text-wrapper {
+  width: 40%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  /* border-radius: 10px;
+  border: 2px solid #f6f7eb; */
+}

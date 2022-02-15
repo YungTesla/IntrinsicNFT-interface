@@ -1,0 +1,13 @@
+.header-low {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 80px;
+}
+
+.header-low {
+  display: none;
+}
