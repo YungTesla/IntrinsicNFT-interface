@@ -28,6 +28,10 @@
   padding: 0 50px;
 }
 
+.contact input {
+  border-radius: 20px;
+}
+
 .message {
   height: 100%;
   margin-top: 10px;
@@ -52,4 +56,9 @@
 
 .person-card img {
   border-radius: 45%;
+}
+
+.socialmedia img {
+  width: 64px;
+  height: 64px;
 }

@@ -1,0 +1,25 @@
+.process-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  align-items: center;
+}
+
+.process-card {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 #f6f7eb;
+  border-radius: 20px;
+  padding: 80px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.process-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-right: 80px;
+}

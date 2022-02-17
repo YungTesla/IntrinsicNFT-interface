@@ -36,25 +36,7 @@ header {
 }
 
 header h1 {
-  /* font-family: "Bungee Shade", cursive; */
-  /* font-family: "Fascinate Inline", cursive; */
-  /* font-family: "Iceberg", cursive; */
-  /* font-family: "Libre Barcode 39 Text", cursive; */
-  /* font-family: "MuseoModerno", cursive; */
-  /* font-family: "Salsa", cursive; */
-  /* font-family: "Stalinist One", cursive; */
-  /* font-family: "Timmana", sans-serif; */
-  /* font-family: "Tourney", cursive; */
-  /* font-family: "Train One", cursive; */
-  /* font-family: "Wendy One", sans-serif; */
-
-  /* font-family: "Finger Paint", cursive; */
-  /* font-family: "Libre Barcode 39 Extended Text", cursive; */
-  /* font-family: "Montserrat Subrayada", sans-serif; */
-  /* font-family: "Cherry Cream Soda", cursive; */
-  /* font-family: "Cabin Sketch", cursive; */
   font-family: "Tenor Sans", sans-serif;
-  /* font-family: "Rampart One", cursive; */
 
   background: -webkit-linear-gradient(
     var(--brandcolor-blue),
@@ -63,7 +45,6 @@ header h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  /* color: var(--brandcolor-blue); */
   font-size: 30px;
 
   letter-spacing: 10px;
