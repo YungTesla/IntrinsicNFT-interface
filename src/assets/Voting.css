@@ -1,7 +1,5 @@
-.container {
-  display: flex;
-  align-items: center;
-  width: 100%;
+.voting {
+  padding-bottom: 200px;
 }
 
 .text-wrapper {

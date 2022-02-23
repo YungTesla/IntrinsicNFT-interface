@@ -1,7 +1,5 @@
 .rarities {
   padding: 50px 20%;
-  background-color: var(--c-mainbrandcolor);
-  margin-bottom: 50px;
   display: flex;
   align-items: center;
   overflow: scroll;
@@ -26,4 +24,14 @@
 
 .rarities .image {
   width: 150px;
+}
+
+.rare-container {
+  background-color: var(--c-mainbrandcolor);
+  padding: 50px;
+  background: linear-gradient(
+    0deg,
+    var(--brandcolor-green) 0%,
+    var(--c-mainbrandcolor) 100%
+  );
 }

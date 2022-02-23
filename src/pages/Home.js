@@ -2,7 +2,7 @@ import Hero from "./Home/Hero";
 import Collections from "./Home/Collections";
 import Rewards from "./Home/Rewards";
 import Royalties from "./Home/Royalties";
-import Calculator from "./Home/Calculator";
+// import Calculator from "./Home/Calculator";
 import Voting from "./Home/Voting";
 import Rarities from "./Home/Rarities";
 import Process from "./Home/Process";
@@ -14,7 +14,7 @@ function Home() {
     <div style={mystyle}>
       <Hero />
       <Collections />
-      <Calculator />
+      {/* <Calculator /> */}
       <Rewards />
       <Royalties />
       <Voting />

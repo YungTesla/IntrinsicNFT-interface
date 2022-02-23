@@ -14,17 +14,11 @@ function Royalties() {
         <div className="royalty-wrapper">
           <h1>Royalties</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            volutpat tempor luctus. Aliquam quis risus in ligula elementum
-            fringilla. Vivamus dapibus enim eu volutpat dapibus. Nullam quis
-            sapien eget nulla sodales faucibus id nec purus. Suspendisse mauris
-            eros, blandit ac laoreet at, elementum efficitur erat. Nunc ut metus
-            mauris. Integer varius interdum tortor in pellentesque. Aenean in
-            ipsum ultrices, convallis arcu sed, iaculis urna. Maecenas risus
-            turpis, pretium nec massa sed, facilisis tincidunt quam. Nunc
-            scelerisque vestibulum laoreet. Quisque tempor sodales sem non
-            rhoncus. Vestibulum pretium tempor tincidunt. Suspendisse ac libero
-            eget mauris fringilla tempor quis nec urna.
+            Every minted NFT increases in value, therefore it will be
+            interesting to sell your NFT. A small amount of 10% of the
+            selling-price will be paid as a royalty to increase the total staked
+            value. In that way the intrinsic value of your NFT will become
+            higher with every trade.
           </p>
         </div>
       </div>

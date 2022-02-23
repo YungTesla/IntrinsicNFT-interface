@@ -9,12 +9,15 @@ function Collections() {
     <div class="collection-container">
       <div class="card">
         <div class="description-wrapper">
-          <h1>Title of collection</h1>
+          <h1>INTRINSIC NFT X SUSHISWAP COLLECTION</h1>
           <p>
-            Nam massa augue, pretium vitae laoreet et, bibendum eu est. Sed
-            auctor, ex vel commodo aliquam, nulla nisi varius nunc, a
-            sollicitudin sem diam consectetur eros. Nullam pretium elit lectus,
-            ac pulvinar eros laoreet vitae.
+            SushiSwap is a populair Decentralized Finance (DeFi) application.
+            SushiSwap provides a platform where users can buy and sell crypto
+            assets, it uses a collection of liquidity pools to achieve this
+            goal. Users first lock up assets into smart contracts, and traders
+            then buy and sell cryptocurrencies from those pools, swapping out
+            one token for another. As a liquidity provider you will also receive
+            trade fee reward.
           </p>
           <Images />
           <div class="buy-container">

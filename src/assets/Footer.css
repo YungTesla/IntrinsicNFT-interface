@@ -6,7 +6,12 @@
     "socialmedia socialmedia socialmedia"
     "contact aboutus aboutus";
   justify-content: center;
-  margin-bottom: 50px;
+  background: linear-gradient(
+    0deg,
+    var(--brandcolor-blue) 0%,
+    var(--brandcolor-green) 100%
+  );
+  padding: 150px 20px;
 }
 
 .socialmedia {

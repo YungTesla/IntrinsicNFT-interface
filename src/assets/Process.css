@@ -1,8 +1,9 @@
 .process-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
   align-items: center;
+  background: var(--brandcolor-green);
+  padding: 150px 20px;
 }
 
 .process-card {

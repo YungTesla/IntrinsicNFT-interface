@@ -4,6 +4,11 @@
   width: 100%;
   justify-content: center;
   background-color: var(--c-mainbrandcolor);
+  padding-bottom: 50px;
+}
+
+.rewards {
+  padding-top: 150px;
 }
 
 .text-wrapper {

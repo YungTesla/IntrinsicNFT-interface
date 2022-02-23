@@ -20,9 +20,9 @@
 }
 
 .calculator {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding: 150px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--c-mainbrandcolor);
 }
