@@ -12,8 +12,10 @@ function Hero() {
           to all holders every month. Simply by holding an NFT you are owner of
           the staked pool and the additional earnings.
         </p>
-        <button class="buy">see how it works</button>
-        <button class="buy">see the collections</button>
+        <div className="button-wrapper">
+          <button class="herobutton">MORE INFO</button>
+          <button class="herobutton">COLLECTIONS</button>
+        </div>
       </div>
       <Heroimage className="hero-image" />
     </div>

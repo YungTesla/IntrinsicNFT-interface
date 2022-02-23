@@ -19,6 +19,36 @@
   padding: 40px;
 }
 
+.hero-text h2 {
+  color: var(--brandcolor-green);
+}
+
 .hero-image {
   width: 50%;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+
+.herobutton {
+  height: 70px;
+  border: #f6f7eb;
+  border-radius: 10px;
+  border: 2px solid #f6f7eb;
+  /* background-color: rgba(0, 0, 0, 0); */
+  color: #f6f7eb;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  width: 40%;
+
+  background: linear-gradient(
+    -45deg,
+    var(--brandcolor-blue),
+    var(--brandcolor-green)
+  );
+  /* background-size: 400% 400%; */
 }
