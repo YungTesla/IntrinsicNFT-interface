@@ -29,7 +29,7 @@
 
 .button-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   padding: 30px;
 }
@@ -43,7 +43,7 @@
   color: #f6f7eb;
   font-size: 20px;
   font-family: "Oswald", sans-serif;
-  width: 40%;
+  width: 130px;
 
   background: linear-gradient(
     -45deg,
@@ -51,4 +51,39 @@
     var(--brandcolor-green)
   );
   /* background-size: 400% 400%; */
+}
+
+@media (max-width: 1200px) {
+  .hero-container {
+    flex-direction: column;
+    height: auto;
+    padding: 100px 0px;
+  }
+  .hero-text {
+    width: 70%;
+    padding: 40px;
+  }
+  .hero-image {
+    width: 80%;
+  }
+
+  .herobutton {
+    width: 40%;
+    height: 50px;
+  }
+
+  .button-wrapper {
+    justify-content: space-between;
+    padding: 50px 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-container {
+    padding: 50px 0px;
+  }
+
+  .herobutton {
+    font-size: 10px;
+  }
 }

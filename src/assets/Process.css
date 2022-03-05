@@ -24,3 +24,14 @@
   align-items: center;
   margin-right: 80px;
 }
+
+@media (max-width: 600px) {
+  .process-card {
+    flex-direction: column;
+    padding: 0;
+    width: auto;
+  }
+  .process-container {
+    flex-direction: column;
+  }
+}

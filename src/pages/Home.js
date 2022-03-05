@@ -6,6 +6,7 @@ import Royalties from "./Home/Royalties";
 import Voting from "./Home/Voting";
 import Rarities from "./Home/Rarities";
 import Process from "./Home/Process";
+import Characteristics from "./Home/Characteristics";
 
 function Home() {
   const mystyle = {};
@@ -15,9 +16,7 @@ function Home() {
       <Hero />
       <Collections />
       {/* <Calculator /> */}
-      <Rewards />
-      <Royalties />
-      <Voting />
+      <Characteristics />
       <Rarities />
       <Process />
     </div>

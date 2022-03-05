@@ -67,3 +67,32 @@
   width: 64px;
   height: 64px;
 }
+
+@media (max-width: 1200px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+  }
+
+  .aboutus {
+    flex-direction: column;
+  }
+  .person-card {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 600px) {
+  .person-card {
+    flex-direction: column;
+  }
+
+  .footer {
+    padding: 50px;
+  }
+
+  .socialmedia ul {
+    flex-direction: column;
+  }
+}

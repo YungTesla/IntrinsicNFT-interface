@@ -1,5 +1,3 @@
-import "../../assets/Royalties.css";
-
 function Royalties() {
   return (
     <div className="container">
@@ -11,7 +9,7 @@ function Royalties() {
             className="image"
           />
         </div>
-        <div className="royalty-wrapper">
+        <div className="text-wrapper">
           <h1>Royalties</h1>
           <p>
             Every minted NFT increases in value, therefore it will be

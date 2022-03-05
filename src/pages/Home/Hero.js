@@ -1,5 +1,5 @@
 import "../../assets/Hero.css";
-import { ReactComponent as Heroimage } from "../../assets/result.svg";
+import { ReactComponent as Heroimage } from "../../assets/Hero4.svg";
 
 function Hero() {
   return (

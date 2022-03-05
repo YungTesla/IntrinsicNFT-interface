@@ -23,3 +23,14 @@
   border-radius: 5%;
   box-shadow: #f6f7eb 0px 10px 15px -3px, #f6f7eb 0px 4px 6px -2px;
 }
+
+@media (max-width: 1000px) {
+  .image {
+    width: 50%;
+  }
+  .prev,
+  .next {
+    width: 25px;
+    height: 25px;
+  }
+}

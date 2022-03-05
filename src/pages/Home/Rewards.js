@@ -1,5 +1,3 @@
-import "../../assets/Rewards.css";
-
 function Rewards() {
   return (
     <div className="container rewards">

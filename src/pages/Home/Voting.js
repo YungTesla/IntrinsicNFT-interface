@@ -1,5 +1,3 @@
-import "../../assets/Voting.css";
-
 function Voting() {
   return (
     <div className="container voting">
