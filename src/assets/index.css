@@ -52,6 +52,22 @@ p {
   font-family: "Roboto Slab", serif;
 }
 
+.big {
+  font-size: 50px;
+}
+
+.bigger {
+  font-size: 75px;
+}
+
+.green {
+  color: var(--brandcolor-green);
+}
+
+.blue {
+  color: var(--brandcolor-blue);
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;

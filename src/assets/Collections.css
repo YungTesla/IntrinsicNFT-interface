@@ -1,107 +1,111 @@
 .collection-container {
-  /* width: 100%; */
-  position: relative;
-  overflow: hidden;
   padding: 150px 20px;
   background: linear-gradient(
     0deg,
     var(--c-mainbrandcolor),
     var(--brandcolor-blue)
   );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.collection-container .card {
-  box-shadow: 0 4px 8px 0 #f6f7eb;
-  width: 65%;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  border-radius: 50px;
-  padding: 30px;
-  background-color: rgba(0, 0, 0, 0.5);
+.nft-container {
+  width: 350px;
+  height: 350px;
   display: flex;
-  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.collection-wrapper {
+  display: flex;
+  width: 1050px;
+  align-items: stretch;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 350px;
+}
+
+.collection-container h1 {
+  font-size: 30px;
+  color: var(--brandcolor-green);
 }
 
 .collection {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding: 20px;
+  justify-content: space-between;
+  /* padding: 20px; */
+  flex-wrap: wrap;
+  width: 1050px;
 }
 
 .collection-item {
-  box-shadow: 0 4px 8px 0 #f6f7eb;
-  padding: 50px;
-  border-radius: 5%;
+  background: linear-gradient(135deg,
+    var(--c-mainbrandcolor),
+    var(--brandcolor-blue));
+  flex: 1;
+  
 }
 
-.buy {
+.collection-item h2{
+  display: flex;
+  justify-content: center;
+}
+
+.buyNFT {
   height: 80px;
-  border: #f6f7eb;
   border-radius: 10px;
   margin: 20px;
   padding: 0px 40px;
-  border: 2px solid #f6f7eb;
-  /* background-color: rgba(0, 0, 0, 0); */
-  color: #f6f7eb;
-  font-size: 20px;
-  font-family: "Oswald", sans-serif;
-  width: 35%;
-
-  background: linear-gradient(
-    -45deg,
-    var(--brandcolor-blue),
-    var(--brandcolor-green)
-  );
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-}
-
-.buy-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.quantity {
-  height: 74px;
-  border: #f6f7eb;
-  border: 2px solid #f6f7eb;
-  border-radius: 10px;
-  margin: 20px;
-  /* background-color: rgba(0, 0, 0, 0); */
-  color: #f6f7eb;
-  font-size: 20px;
-  width: 80px;
-  text-align: center;
-  font-family: "Oswald", sans-serif;
-
-  background: linear-gradient(
-    -45deg,
-    var(--brandcolor-blue),
-    var(--brandcolor-green)
-  );
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-}
-
-.sum {
-  cursor: pointer;
-  color: #f6f7eb;
-  font-weight: bold;
-  font-size: 15px;
-  border: 2px solid #f6f7eb;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  border: 2px solid var(--brandcolor-green);
   background-color: rgba(0, 0, 0, 0);
+  color: var(--brandcolor-green);
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
 }
 
-.quantity-wrapper {
-  /* padding: 0px 100px; */
-  width: 35%;
+
+
+.collectionTitle {
+  border-bottom: 1px solid var(--brandcolor-blue);
+  margin: 0% 20%;
+}
+
+.descriptionWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  
+}
+
+.wider {
+  width: 700px;
+  /* transition: 1s; */
+}
+
+.description{
+  flex:1;
+  cursor:alias;
+}
+
+.description p{
+  padding: 20px;
+}
+
+.buttonWrapper{
+  display: flex;
 }
 
 @media (max-width: 1000px) {

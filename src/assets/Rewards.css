@@ -16,8 +16,8 @@
   padding: 20px;
 }
 
-.text-wrapper h1 {
-  color: var(--brandcolor-blue);
+.text-wrapper h2 {
+  text-align: left;
 }
 
 .wrapper {

@@ -1,21 +1,25 @@
 import Hero from "./Home/Hero";
 import Collections from "./Home/Collections";
-// import Calculator from "./Home/Calculator";
 import Rarities from "./Home/Rarities";
 import Process from "./Home/Process";
 import Characteristics from "./Home/Characteristics";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
 
 function Home() {
-  const mystyle = {};
-
   return (
-    <div style={mystyle}>
+    <div>
+      <Header />
       <Hero />
       <Collections />
-      {/* <Calculator /> */}
       <Characteristics />
       <Rarities />
       <Process />
+      <Footer />
     </div>
   );
 }

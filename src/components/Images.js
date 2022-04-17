@@ -10,7 +10,7 @@ function Images() {
         &#10094;
       </button>
       <img
-        src="https://picsum.photos/350?grayscale"
+        src="https://picsum.photos/200?grayscale"
         alt="Lorem"
         className="image"
         key={imageKey}

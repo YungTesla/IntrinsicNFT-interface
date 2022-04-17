@@ -21,6 +21,7 @@
 
 .hero-text h2 {
   color: var(--brandcolor-green);
+  font-size: 50px;
 }
 
 .hero-image {
