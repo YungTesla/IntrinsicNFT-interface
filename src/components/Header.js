@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import "../assets/Header.css";
-import "../assets/index.css";
-import { ReactComponent as MenuOpen } from "../assets/menu.svg";
-import { ReactComponent as MenuClose } from "../assets/close.svg";
-import { ReactComponent as Login } from "../assets/login.svg";
+import "../assets/css/Header.css";
+import "../assets/css/index.css";
+import { ReactComponent as MenuOpen } from "../assets/images/menu.svg";
+import { ReactComponent as MenuClose } from "../assets/images/close.svg";
+import { ReactComponent as Login } from "../assets/images/login.svg";
 import { motion } from "framer-motion";
 
 const Header = () => {
@@ -18,6 +18,9 @@ const Header = () => {
     animate: {
       height: "10vh",
       transition: { delay: 3, duration: 1, ease: "easeOut" },
+    },
+    stop: {
+      height: "10vh",
     },
   };
 
@@ -62,7 +65,12 @@ const Header = () => {
   };
 
   return (
-    <motion.header variants={headerVariant} initial="init" animate="animate">
+    <motion.header
+      variants={headerVariant}
+      initial="init"
+      animate="animate"
+      whileTap="stop"
+    >
       <div class="name-wrap" onClick={(event) => window.scrollTo(0, 0)}>
         <Link to="/">
           <motion.svg
@@ -108,14 +116,15 @@ const Header = () => {
           </motion.svg>
         </Link>
       </div>
-      <motion.h1
+      <motion.div
+        className="text"
         variants={titleVariant}
         initial="init"
         animate="animate"
         onClick={(event) => window.scrollTo(0, 0)}
       >
         INTRINSIC NFT
-      </motion.h1>
+      </motion.div>
       <motion.div
         class="menu"
         variants={menuVariant}

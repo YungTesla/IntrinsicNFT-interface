@@ -1,9 +1,13 @@
-import "../../assets/Collections.css";
-import { useState } from "react";
+import "../../assets/css/Collections.css";
+import { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
-import ethereum from "../../assets/etherlogo2.png";
+import ethereum from "../../assets/images/ethereum.png";
+import PurchaseButton from "../Home/PurchaseButton";
+
+import { ethers } from "ethers";
+import nftContractAbi from "../../assets/contracts/abi.json";
+const nftContractAddress = "0xBE0b03Bfa01cB4Fb4B1ceD456fb0a2b24fcf23A6";
 
 const variant = {
   init: {
@@ -79,7 +83,10 @@ function Collections() {
   const [count, setCount] = useState(0);
   const [image, setImage] = useState(nfts[count]);
 
+  const [priceNFT, setPriceNFT] = useState(null);
+
   useEffect(() => {
+    nftPrice();
     if (inView) {
       animation.start({
         opacity: 1,
@@ -94,8 +101,30 @@ function Collections() {
     }
   }, [inView, count, animation]);
 
+  const nftPrice = async () => {
+    try {
+      const { ethereum } = window;
+
+      if (ethereum) {
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const nftContract = new ethers.Contract(
+          nftContractAddress,
+          nftContractAbi,
+          provider
+        );
+        const price = await nftContract.newPriceNFT();
+        setPriceNFT(price.toString() / 10 ** 18);
+        return price.toString();
+      } else {
+        console.log("Ethereum object does not exist");
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
-    <div ref={ref} class="collection-container" id="collection-container">
+    <div ref={ref} className="collection" id="collection-container">
       <motion.div
         className="collection-wrapper"
         variants={variant}
@@ -118,19 +147,12 @@ function Collections() {
               <h2 className="green">COLLECTION</h2>
             </div>
             <div className="buttonWrapper">
-              <motion.button
-                className="buyNFT"
-                whileHover="animate"
-                variants={buttonVariant}
-                whileTap={{ scale: 0.9 }}
-              >
-                BUY INTRINSIC NFT
-              </motion.button>
+              <PurchaseButton />
+
               {!displayInfo && (
                 <motion.button
                   whileHover="animate"
                   variants={buttonVariant}
-                  className="buyNFT"
                   onClick={(event) => setDisplayInfo(!displayInfo)}
                   whileTap={{ scale: 0.9 }}
                 >
@@ -160,7 +182,7 @@ function Collections() {
       </motion.div>
 
       <motion.div
-        class="collection"
+        class="kpi"
         variants={variant}
         initial="init"
         animate={animation}
@@ -171,11 +193,7 @@ function Collections() {
           whileHover="hover"
           animate="rest"
         >
-          <motion.h2
-            className="green"
-            variants={titleMotion}
-            // whileHover={{ color: "var(--brandcolor-blue)" }}
-          >
+          <motion.h2 className="green" variants={titleMotion}>
             NFT'S SOLD
           </motion.h2>
           <motion.h2 variants={numberMotion}>384</motion.h2>
@@ -201,11 +219,11 @@ function Collections() {
           animate="rest"
         >
           <motion.h2 className="green" variants={titleMotion}>
-            INTRINSIC VALUE
+            INTRINSIC PRICE
           </motion.h2>
           <motion.h2 variants={numberMotion}>
             <img src={ethereum} alt="React Logo" style={{ width: "50px" }} />
-            &nbsp; 0.12
+            &nbsp; {priceNFT}
           </motion.h2>
         </motion.div>
         <motion.div

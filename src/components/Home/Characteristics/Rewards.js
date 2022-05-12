@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import rewards from "../../assets/rewards.png";
+import rewards from "../../../assets/images/rewards.png";
 
 function Rewards() {
   return (

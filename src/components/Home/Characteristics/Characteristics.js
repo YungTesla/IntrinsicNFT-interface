@@ -1,7 +1,7 @@
-import Voting from "./Voting";
-import Royalties from "./Royalties";
-import Rewards from "./Rewards";
-import "../../assets/Characteristics.css";
+import Voting from "../../Home/Characteristics/Voting";
+import Royalties from "../../Home/Characteristics/Royalties";
+import Rewards from "../../Home/Characteristics/Rewards";
+import "../../../assets/css/Characteristics.css";
 import { motion } from "framer-motion";
 
 function Characteristics() {

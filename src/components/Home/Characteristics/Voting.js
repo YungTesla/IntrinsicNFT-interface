@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import voting from "../../assets/voting.png";
+import voting from "../../../assets/images/voting.png";
 
 function Voting() {
   return (

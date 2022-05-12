@@ -35,3 +35,13 @@
     var(--c-mainbrandcolor) 100%
   );
 }
+
+.rare-container .dot{
+  background-color: var(--brandcolor-green);
+}
+
+.rare-container .imageWrapper {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}

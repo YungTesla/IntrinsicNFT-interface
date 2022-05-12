@@ -1,9 +1,8 @@
-import Hero from "./Home/Hero";
-import Collections from "./Home/Collections";
-import Rarities from "./Home/Rarities";
-import Process from "./Home/Process";
-import Characteristics from "./Home/Characteristics";
 import Header from "../components/Header";
+import Hero from "../components/Home/Hero";
+import Collections from "../components/Home/Collections";
+import Characteristics from "../components/Home/Characteristics/Characteristics";
+import Rarities from "../components/Home/Rarities";
 import Footer from "../components/Footer";
 
 window.onbeforeunload = function () {
@@ -18,7 +17,6 @@ function Home() {
       <Collections />
       <Characteristics />
       <Rarities />
-      <Process />
       <Footer />
     </div>
   );

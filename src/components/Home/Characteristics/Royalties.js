@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import royalties from "../../assets/royalties.png";
+import royalties from "../../../assets/images/royalties.png";
 
 function Royalties() {
   return (

@@ -1,5 +1,5 @@
-import "../../assets/Hero.css";
-import { ReactComponent as Heroimage } from "../../assets/Hero4.svg";
+import "../../assets/css/Hero.css";
+import { ReactComponent as Heroimage } from "../../assets/images/Hero.svg";
 import { motion } from "framer-motion";
 
 import { Link } from "react-scroll";

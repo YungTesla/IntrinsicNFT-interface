@@ -39,7 +39,7 @@
   display: inline-block;
 }
 
-.Char .bigger {
+.bigger {
   display: flex;
   align-items: center;
   justify-content: center;
